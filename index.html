@@ -1,129 +1,209 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GRx Scout Programme Effectiveness Report</title>
+<title>GRx Scout Programme Current Snapshot</title>
 <style>
 :root { --ink:#1F2430; --muted:#6F768A; --grid:#E6E8F0; --panel:#fff; --surface:#FCFCFD; --blue:#5477C4; --orange:#CC6F47; --olive:#71B436; --gold:#B8A037; }
 * { box-sizing:border-box; }
 body { margin:0; background:var(--surface); color:var(--ink); font-family: Inter, Aptos, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; line-height:1.55; }
-main { max-width:1120px; margin:0 auto; padding:44px 24px 64px; }
+main { max-width:1160px; margin:0 auto; padding:44px 24px 64px; }
 header { border-bottom:1px solid var(--grid); padding-bottom:24px; margin-bottom:28px; }
 h1 { font-size:34px; line-height:1.1; margin:0 0 12px; letter-spacing:0; }
-.meta { color:var(--muted); font-size:14px; max-width:850px; }
+.meta { color:var(--muted); font-size:14px; max-width:900px; }
 section { margin:34px 0; }
 h2 { font-size:22px; line-height:1.25; margin:0 0 12px; }
 h3 { font-size:16px; margin:20px 0 8px; }
-p { margin:0 0 12px; max-width:880px; }
-ul, ol { max-width:920px; padding-left:22px; }
+p { margin:0 0 12px; max-width:940px; }
+ul, ol { max-width:940px; padding-left:22px; }
 li { margin:5px 0; }
 strong { font-weight:700; }
 .metrics { display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:12px; margin:20px 0 6px; }
-.metric { background:var(--panel); border:1px solid var(--grid); border-radius:8px; padding:16px; min-height:118px; }
+.metric { background:var(--panel); border:1px solid var(--grid); border-radius:8px; padding:16px; min-height:116px; }
 .metric-value { font-size:30px; line-height:1; font-weight:750; color:var(--blue); margin-bottom:8px; }
 .metric-label { font-size:13px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); font-weight:700; margin-bottom:7px; }
 .metric-note { font-size:13px; color:var(--ink); }
-.figure { background:var(--panel); border:1px solid var(--grid); border-radius:8px; padding:14px; margin:18px 0 24px; }
-.figure img { display:block; width:100%; height:auto; }
-.figure-note { font-size:13px; color:var(--muted); margin-top:8px; }
 table { width:100%; border-collapse:collapse; background:var(--panel); border:1px solid var(--grid); border-radius:8px; overflow:hidden; font-size:13px; }
 th, td { border-bottom:1px solid var(--grid); padding:10px 11px; text-align:left; vertical-align:top; }
 th { background:#F4F5F7; color:#464C55; font-size:12px; text-transform:uppercase; letter-spacing:.035em; }
 tr:last-child td { border-bottom:none; }
 .compact td { font-size:12.5px; }
-.callout { border-left:4px solid var(--orange); padding:12px 14px; background:#FFEDDE; border-radius:0 8px 8px 0; max-width:900px; }
-.source-list code { color:#464C55; font-size:12px; }
-.badge { display:inline-block; padding:2px 7px; border-radius:999px; background:#EAF1FE; color:#2E4780; font-size:12px; font-weight:700; }
+.status { display:inline-block; padding:2px 7px; border-radius:999px; background:#EAF1FE; color:#2E4780; font-size:12px; font-weight:700; }
+.status.orange { background:#FFEDDE; color:#8A3D1F; }
+.status.green { background:#EBF6E5; color:#3B681F; }
+.status.gray { background:#EEF0F4; color:#515867; }
+.note { color:var(--muted); font-size:13px; }
+.callout { border-left:4px solid var(--orange); padding:12px 14px; background:#FFEDDE; border-radius:0 8px 8px 0; max-width:940px; }
 @media (max-width:760px) { main { padding:28px 14px 44px; } h1 { font-size:27px; } .metrics { grid-template-columns:1fr; } table { font-size:12px; } th,td { padding:8px; } }
 </style>
 </head>
 <body>
 <main>
 <header data-contract-section="title">
-<h1>GRx Scout Programme: Current Picture and Effectiveness</h1>
-<div class="meta">Prepared 7 June 2026, Europe/London. Scope: Scout CRM/local folder, prior scout reports, event attendance exports, cohort founder files, and Gmail threads checked through 7 June 2026. No CRM or email state was modified.</div>
+<h1>GRx Scout Programme: Current Snapshot</h1>
+<div class="meta">Prepared 7 June 2026, Europe/London. Snapshot of Scout CRM/local files, scout intro-call notes, event attendance exports, cohort founder files, and Gmail threads checked through 7 June 2026. This version records current facts and open statuses only.</div>
 </header>
 
-<section data-contract-section="executive-summary">
-<h2>Executive Summary</h2>
-<p><strong>The scout programme is producing real deal flow, but the value is concentrated in a small set of scouts.</strong> Since the formal launch on 9 March 2026, GRx has run <strong>10 scout intro calls</strong>, built a CRM of <strong>63 tracked scout/scout-like records plus 2 prospects</strong>, and has <strong>13 formal scouts with at least one concrete project signal</strong>.</p>
-<p><strong>Project volume is strong for a three-month-old programme.</strong> The latest dedupe estimate is <strong>40+ named scout-sourced startup/project records</strong>, up from ~12 on 24 March and ~23 on 31 March. On a per-scout signal basis, there are about <strong>44 formal project/proposal signals</strong> plus several warm/pre-intro leads.</p>
-<p><strong>Outcome proof is promising but still early.</strong> SWEN, Localie, and Steez are confirmed in cohort founder files and are tied to scout/referrer activity in the local CRM context. Traxion Biotech is marked accepted in Scout CRM but is not visible in the current founder index, so it should be verified before external reporting.</p>
-<p><strong>The freshest Gmail status changes the operating queue.</strong> After 25 May, Ivan added ADSS; Spencer and Sandro surfaced Egos.ai and eYou; Praevo, Wizium, and ProductMind became direct founder threads; James Hughes and Richard Cummins moved from “warm” to high-priority relationship follow-up.</p>
+<section data-contract-section="current-snapshot">
+<h2>Current Snapshot</h2>
+<p><strong>Programme baseline:</strong> 10 recorded scout intro calls since 9 March 2026; 63 tracked scout/scout-like CRM records plus 2 prospects; 13 formal scouts/referrers with at least one concrete project signal.</p>
+<p><strong>Project baseline:</strong> 40+ named scout-sourced or scout-adjacent startup/project records are visible across the CRM, local reports, and Gmail. On a per-scout signal basis the current working count is about 44 formal project/proposal signals, plus warm leads where a company or founder has not yet been introduced.</p>
+<p><strong>Accepted / cohort-linked records:</strong> SWEN, Localie, and Steez are visible in cohort founder files and tied to scout/referrer activity in local context. Traxion Biotech is marked accepted in Scout CRM but was not visible in the current founder index during the earlier check.</p>
+<p><strong>Fresh email layer after 25 May:</strong> ADSS was added by Ivan on 4 June; Praevo, Wizium, and ProductMind are direct founder threads; Egos.ai and eYou were screened as fundraise-first / not currently accelerator-first; Vectioneer needs a rescheduled call with Tatiana after the missed 28 May meeting.</p>
 </section>
 
 <section data-contract-section="kpis">
-<div class="metrics"><div class="metric"><div class="metric-value">10</div><div class="metric-label">Scout intro calls</div><div class="metric-note">9 group calls + Matthew 1:1, from 9 Mar to 6 May</div></div><div class="metric"><div class="metric-value">63 + 2</div><div class="metric-label">Tracked records</div><div class="metric-note">63 CRM scout/scout-like records + Charlie/Cristiano prospects</div></div><div class="metric"><div class="metric-value">13</div><div class="metric-label">Formal active referrers</div><div class="metric-note">At least one concrete project/founder signal</div></div><div class="metric"><div class="metric-value">40+</div><div class="metric-label">Named projects</div><div class="metric-note">Dedupe estimate after fresh Gmail through 7 Jun</div></div><div class="metric"><div class="metric-value">3 + 1</div><div class="metric-label">Accepted outcomes</div><div class="metric-note">3 in cohort files + Traxion CRM-attested</div></div><div class="metric"><div class="metric-value">20+</div><div class="metric-label">Dormant / low signal</div><div class="metric-note">Still the biggest efficiency drag</div></div></div>
+<div class="metrics"><div class="metric"><div class="metric-value">10</div><div class="metric-label">Scout intro calls</div><div class="metric-note">9 group calls + Matthew 1:1, 9 Mar to 6 May</div></div><div class="metric"><div class="metric-value">63 + 2</div><div class="metric-label">Tracked records</div><div class="metric-note">63 CRM scout/scout-like records + Charlie/Cristiano prospects</div></div><div class="metric"><div class="metric-value">13</div><div class="metric-label">Formal active referrers</div><div class="metric-note">At least one concrete project/founder signal</div></div><div class="metric"><div class="metric-value">40+</div><div class="metric-label">Named projects</div><div class="metric-note">Dedupe estimate after Gmail through 7 Jun</div></div><div class="metric"><div class="metric-value">15</div><div class="metric-label">Event-attended records</div><div class="metric-note">Scout/referrer/prospect records with attended/joined signal</div></div><div class="metric"><div class="metric-value">5</div><div class="metric-label">Potential panel queue</div><div class="metric-note">Miptoxu, Wizium, ProductMind, Praevo, Ambic</div></div></div>
+</section>
+
+<section data-contract-section="admission-panel-queue">
+<h2>Potential Admission Panel Queue For Tatiana</h2>
+<p><strong>These are the companies currently visible from email as possible admission-panel work.</strong> The status labels below describe where the thread stands; they are not a ranking.</p>
+<table class="compact"><thead><tr><th>Company</th><th>Scout / referrer</th><th>Latest email status</th><th>Panel status as of 7 Jun</th></tr></thead><tbody>
+<tr><td>Miptoxu</td><td>Ivan Denisov</td><td>Founder update on 22 May: structured surgical notes module, NHS Liverpool interest, Stanford validation offer, clinical protocols in 3 UK clinics, pre-seed target September. Alex replied 25 May that panels start 8 June and cohort starts mid-August.</td><td><span class="status green">Panel candidate</span> Team next steps pending after Alex's 25 May reply.</td></tr>
+<tr><td>Wizium</td><td>Ivan Denisov</td><td>Founder reply on 27 May: excited about accelerator, offered additional material for admission panel; $144K ARR in 5 months; $800K hard + $100K soft committed on pre-seed; team includes ex-Meta ML + PhD, serial founder, Amazon seller background.</td><td><span class="status green">Panel candidate</span> Alex told founder next steps would come after around 10 June.</td></tr>
+<tr><td>ProductMind</td><td>Mikhail Sidakov</td><td>Founder intro on 25 May with deck. ProductMind is a local-first AI copilot for evidence-grounded PRDs and dev-ticket breakdowns; V1 live; built solo in 4 months; raising £250K SEIS. Founder replied 26 May and is waiting after 10 June.</td><td><span class="status green">Panel candidate</span> Waiting for Tatiana/Alex post-10 June next steps.</td></tr>
+<tr><td>Praevo</td><td>Tienn Kapilasena</td><td>Founder Michael Chan sent deck on 27 May. Stage: past ideation and actively building; biomechanics/movement-analysis platform with Praevo Band hardware roadmap; early interest from Yorkville Sports Medicine, Penn State athletes, Ontario Soccer Association teams; fundraising likely within 6 months; explicitly interested in accelerator path.</td><td><span class="status orange">Potential panel</span> Deck received; founder call / review not yet visible.</td></tr>
+<tr><td>Ambic</td><td>Mikhail Sidakov</td><td>Tatiana spoke with Sebastian on 21 May. Her note to Mikhail: great founder, early-stage, launch expected in the next couple of weeks, good fit overall. Sebastian replied that joining the GRx community and accelerator would be valuable. Tatiana said she was away and would reply when back on 9 June.</td><td><span class="status orange">Potential panel</span> Waiting for Tatiana's return and traction/update check.</td></tr>
+</tbody></table>
+
+<h3>Current project threads not yet in panel queue</h3>
+<table class="compact"><thead><tr><th>Company</th><th>Scout / referrer</th><th>Status</th><th>Reason it is not currently a panel item</th></tr></thead><tbody>
+<tr><td>ADSS</td><td>Ivan Denisov</td><td>New proposal on 4 June with deck; autonomous-vehicle certification / simulation scenarios; founders named Georgiy Fidelin and Alexander Kutsan.</td><td><span class="status gray">Pre-intro</span> Founder intro has not happened yet; draft reply asks whether Ivan should intro or share round context first.</td></tr>
+<tr><td>Vectioneer / Motorcortex</td><td>Alexander Skuridin</td><td>External intro on 8 May; call scheduled for 28 May but missed; Philippe replied 1 June that another time can be found.</td><td><span class="status gray">Call needed</span> Alex noted Tatiana is back next week and it would be useful to do the intro call together.</td></tr>
+<tr><td>Egos.ai</td><td>Spencer Regan-Smith</td><td>Pre-revenue, raising $1-2M pre-seed; founder says accelerator could be discussed but they are not convinced it is the right use of time.</td><td><span class="status gray">Fit unclear</span> Current thread is fundraise-first and accelerator interest is uncertain.</td></tr>
+<tr><td>eYou</td><td>Sandro Mothes</td><td>Social media platform with 50K+ users; founder actively raising seed.</td><td><span class="status gray">Not accelerator-first</span> Sandro confirmed founder is not currently interested in accelerator; Alex advised holding off on intro.</td></tr>
+<tr><td>Merble</td><td>Mikhail Sidakov</td><td>AI loan officer for lenders; Tatiana call happened 20 May; described as great founder and great traction.</td><td><span class="status gray">Fund-side / stage</span> Thread says they appear more interested in fund than accelerator because of advanced stage and NYC location.</td></tr>
+<tr><td>Orthonika</td><td>Azeem Alam</td><td>Tatiana feedback sent 7 May; Imperial spinout / medtech; had raised £5.5M including £3M equity.</td><td><span class="status gray">Monitor / application path</span> Invited to next cohort, but current notes flag possible later-stage fit.</td></tr>
+</tbody></table>
+</section>
+
+<section data-contract-section="active-scouts">
+<h2>Active Scouts And Project Signals</h2>
+<p><strong>Active below means a concrete project/founder signal exists in the CRM, local reports, or Gmail.</strong> Counts are operating counts and include proposals, intros, and named projects, not only accepted cohort companies.</p>
+<table class="compact"><thead><tr><th>Scout / referrer</th><th>Count</th><th>Projects / intros</th><th>Latest visible signal</th></tr></thead><tbody>
+<tr><td>Mikhail Sidakov</td><td>14+</td><td>Landy; Rhycon; Socialode; ex-Amazon/ex-PayPal founder; EdTech; Unicool/Tamara; Dutch TravelTech; Localie; SWEN; Merble; Ambic; ProductMind; plus partnership/referrer leads</td><td>ProductMind founder thread 25-26 May; Ambic next-stage thread; Baby.vc partnership context in local notes.</td></tr>
+<tr><td>Ivan Denisov</td><td>7</td><td>Lazy Dynamics; TravelSoul; Fusepay; PowerIn.Space; Miptoxu; Wizium; ADSS</td><td>ADSS proposal 4 June; Wizium founder reply 27 May; Miptoxu aligned to next cohort in 25 May reply.</td></tr>
+<tr><td>Matthew Milner</td><td>5</td><td>Tech Tags; FlowBio; Jules Stories; Volador Energy; Autman Robotics</td><td>Demo Day C3 check-in; no fresh referral email found after the May check.</td></tr>
+<tr><td>Azeem Alam</td><td>4</td><td>Traxion Biotech; SURGALFA; Elvio Robotics; Orthonika</td><td>Orthonika feedback loop 7-8 May; Traxion accepted in Scout CRM.</td></tr>
+<tr><td>Gregory McLoughlin</td><td>4</td><td>Vizmech; Veridue AI; Calibre; Supernomic</td><td>Demo Day C3 approved/no check-in in event export; no fresh post-6 May Gmail signal found.</td></tr>
+<tr><td>Spencer Regan-Smith</td><td>2</td><td>Synaptive; Egos.ai</td><td>Egos.ai forwarded 20 May; clarified 25-26 May as fundraise-first / accelerator uncertain.</td></tr>
+<tr><td>Sandro Mothes</td><td>2</td><td>Pixoft; eYou</td><td>eYou screened 25-26 May; founder not currently interested in accelerator.</td></tr>
+<tr><td>Tienn Kapilasena</td><td>1</td><td>Praevo</td><td>Founder intro 25 May; deck and accelerator-interest confirmation 27 May.</td></tr>
+<tr><td>Deep Sirohi</td><td>1</td><td>Steez</td><td>Steez appears in cohort founder files.</td></tr>
+<tr><td>Samuel Izzard</td><td>1</td><td>FLOWBio</td><td>Moved to Republic; asked to catch up in prior snapshot; 2 Apr event check-in.</td></tr>
+<tr><td>Arjun Singh Deep</td><td>1</td><td>Autman Robotics</td><td>Later-stage / investment-side routing in local notes.</td></tr>
+<tr><td>Bikramaditya Bose</td><td>1</td><td>Temperate</td><td>Founder declined fit in March notes; 24 Mar event approved/no check-in.</td></tr>
+<tr><td>Denis Prodan</td><td>1</td><td>Nova</td><td>No fresh signal found in the latest checked context.</td></tr>
+</tbody></table>
+
+<h3>Warm / engaged records without confirmed project intro yet</h3>
+<table class="compact"><thead><tr><th>Person</th><th>Signal</th><th>Project / lead</th><th>Current status</th></tr></thead><tbody>
+<tr><td>James Hughes</td><td>Warm project/person signal</td><td>Francesca Brady / company not specified; female founder pitch-day invite context</td><td>Attended Demo Day C3; operator + Proxy VC + US expansion profile; no full company intro visible yet.</td></tr>
+<tr><td>Richard Cummins</td><td>Warm relationship signal</td><td>Unnamed robotics/deep-tech founders from SXSW conversations</td><td>Attended Demo Day C3; 3 June reply says he spoke with founders at SXSW and expected to see GRx at LTW.</td></tr>
+<tr><td>Piero Azzano</td><td>2 warm leads</td><td>MediaMiner; TalentWare</td><td>No full intro visible; mostly Italy/fund-side questions in prior snapshot.</td></tr>
+<tr><td>Sophie Beaumont</td><td>1 warm lead</td><td>AI/computer-vision farming cultivation tool</td><td>Waiting on location / in-person fit from earlier context.</td></tr>
+<tr><td>Pritika Nayak</td><td>2 warm leads</td><td>Dentillegence; Xenadx</td><td>Needs reply / formal onboarding in earlier notes.</td></tr>
+<tr><td>Nicolas Sendagorta</td><td>Warm scout, no project yet</td><td>No project yet</td><td>Imperial / First Momentum / AI-ML channel; said he will share ideas.</td></tr>
+<tr><td>Ashwin Lohar</td><td>Warm scout, no project yet</td><td>No project yet</td><td>Signed up for Demo Day by email; event CSV showed pending approval, not attendance.</td></tr>
+<tr><td>Simon Tautz</td><td>Warm scout, no project yet</td><td>No project yet</td><td>Oxford/Munich deep-tech bridge; Demo Day approved under alternate email, no check-in.</td></tr>
+<tr><td>Charlie Berners-Price</td><td>Scout prospect</td><td>No project yet</td><td>Checked in at Demo Day C3; event title says Scout at Strand Ventures.</td></tr>
+<tr><td>Cristiano</td><td>Inbound prospect</td><td>No project yet</td><td>Scout-role email on 1 May; no reply found in checked mailbox snapshot.</td></tr>
+</tbody></table>
+</section>
+
+<section data-contract-section="event-attendance">
+<h2>Scout / Referrer Event Attendance</h2>
+<p><strong>The event layer shows 15 scout/referrer/prospect records with attended or joined signals, and 25 records with any event signal.</strong> Attendance means Luma checked-in, Google Meet participant evidence, or virtual Luma joined. Approved/no-check-in rows are listed separately where relevant.</p>
+<table class="compact"><thead><tr><th>Person</th><th>Current CRM / role status</th><th>Attended / joined count</th><th>Events attended / joined</th></tr></thead><tbody>
+<tr><td>Egor Zubkov</td><td>Scout intern / internal scout support</td><td>6</td><td>Pitch Practice C2; Hack Fundraising II; Close Round: Lessons Learned; Investing in Robotics & AI; Attract Investors; Accel Fundraise.</td></tr>
+<tr><td>Charlie Berners-Price</td><td>Demo Day scout prospect</td><td>3</td><td>Founder x Angel; Fundraising Starts Now; Demo Day C3.</td></tr>
+<tr><td>Matthew Milner</td><td>Active referrer</td><td>2</td><td>Investing in Robotics & AI on 24 Mar; Demo Day C3 on 14 May.</td></tr>
+<tr><td>James Hall</td><td>New scout, no referrals yet</td><td>2</td><td>Fundraising UK vs US; Pitch Practice C2.</td></tr>
+<tr><td>Asli Erdal</td><td>Engaged scout, no referrals yet</td><td>2</td><td>Q&A Online; Hack Fundraising I.</td></tr>
+<tr><td>Anastasiia Shabalina</td><td>Silent / legacy scout record</td><td>2</td><td>Close Round: Silicon Valley; Playbook Online.</td></tr>
+<tr><td>Karima / Northbright Capital</td><td>External referrer</td><td>1</td><td>Demo Day C3.</td></tr>
+<tr><td>Pulkit Mishra</td><td>Engaged scout, no referrals yet</td><td>1</td><td>Hack Fundraising II.</td></tr>
+<tr><td>Brayden Gould</td><td>Engaged scout, no referrals yet</td><td>1</td><td>Attract Investors.</td></tr>
+<tr><td>Samuel Izzard</td><td>Active referrer</td><td>1</td><td>Attract Investors.</td></tr>
+<tr><td>Tienn Kapilasena</td><td>Active referrer</td><td>1</td><td>Accel Fundraise.</td></tr>
+<tr><td>Pritika Nayak</td><td>Engaged scout, no referrals yet</td><td>1</td><td>Q&A Online.</td></tr>
+<tr><td>James Hughes</td><td>New scout, no referrals yet</td><td>1</td><td>Demo Day C3.</td></tr>
+<tr><td>Richard Cummins</td><td>New scout / warm scout relationship</td><td>1</td><td>Demo Day C3.</td></tr>
+<tr><td>Wanlin Lee</td><td>New scout, no referrals yet</td><td>1</td><td>Demo Day C3.</td></tr>
+</tbody></table>
+
+<h3>Demo Day C3 scout/prospect signals</h3>
+<table class="compact"><thead><tr><th>Person</th><th>Event status</th><th>Scout context</th></tr></thead><tbody>
+<tr><td>Richard Cummins</td><td>Approved and checked in</td><td>Follow-up email on 18 May; later 3 June reply references SXSW robotics/deep-tech founders.</td></tr>
+<tr><td>James Hughes</td><td>Approved and checked in</td><td>Asked for ideal founder criteria; no confirmed startup intro yet.</td></tr>
+<tr><td>Wanlin Lee</td><td>Approved and checked in</td><td>Listed as Global Venture Scout in event export.</td></tr>
+<tr><td>Matthew Milner</td><td>Approved and checked in</td><td>Existing active referrer with five March project signals.</td></tr>
+<tr><td>Charlie Berners-Price</td><td>Approved and checked in</td><td>Scout at Strand Ventures; not yet in original Scout CRM baseline.</td></tr>
+<tr><td>Karima / Northbright Capital</td><td>Approved and checked in</td><td>External referrer tied to BuildBoss and cohort founder context.</td></tr>
+<tr><td>Gregory McLoughlin</td><td>Approved, no check-in timestamp</td><td>Active historical referrer; do not count as CSV-confirmed attendance.</td></tr>
+<tr><td>Simon Tautz</td><td>Approved, no check-in timestamp</td><td>Alternate event email differs from CRM email; do not count as CSV-confirmed attendance.</td></tr>
+<tr><td>Ashwin Lohar</td><td>Pending approval in CSV</td><td>Email said he registered for Demo Day; attendance not confirmed in event data.</td></tr>
+<tr><td>Mikhail Sidakov</td><td>Invited, no check-in timestamp in Demo Day C3 export</td><td>CRM separately says he attended Demo Day C1 as Venture Scout; treat that as CRM-attested, not CSV-confirmed.</td></tr>
+</tbody></table>
 </section>
 
 <section data-contract-section="call-history">
 <h2>Scout Intro Calls Held</h2>
 <p><strong>The formal programme has 10 recorded intro calls.</strong> That includes nine group calls plus one 1:1 with Matthew Milner. Mikhail predates the formal March call sequence and later co-hosted April calls.</p>
-<table class="compact"><thead><tr><th>#</th><th>Date</th><th>Format</th><th>Scouts attended</th></tr></thead><tbody><tr><td>1</td><td>9 Mar 2026</td><td>Group</td><td>Arjun Singh Deep; Deep Sirohi; Yasmina Banine; Samuel Izzard; Andrea Alivernini; Jan-Philipp Groth; Andre Welponer; Anastasiia Shabalina</td></tr><tr><td>2</td><td>10 Mar 2026</td><td>Group</td><td>Gregory McLoughlin; Tea Vrcic; Azeem Alam; Bikramaditya Bose; Stefano Valle</td></tr><tr><td>3</td><td>12 Mar 2026</td><td>Group</td><td>Rob McKendrick; Riccardo Ongaro; Daniel Hung; Piero Azzano</td></tr><tr><td>4</td><td>17 Mar 2026</td><td>Group</td><td>Ivan Denisov; Sandro Mothes; Sophie Beaumont; Elio Caccuri</td></tr><tr><td>5</td><td>18 Mar 2026</td><td>1:1</td><td>Matthew Milner, with Dmitry and Alex</td></tr><tr><td>6</td><td>27 Mar 2026</td><td>Group</td><td>Brayden Gould; Keshav Todi; Kantesh Sinha; Pulkit Mishra; Samrath Arora; Sarah Luna Mongin; Vanessa</td></tr><tr><td>7</td><td>7 Apr 2026</td><td>Group</td><td>Mikhail Sidakov; Spencer Regan-Smith; Sarfaraz; Jayesh Agarwal; Aidin Kazemizadeh; Bo-Liang Lu; Alexi Chiaramonte; Wanlin Lee</td></tr><tr><td>8</td><td>8 Apr 2026</td><td>Group</td><td>Mikhail Sidakov as co-host; Abrar Akhtar; Ashraf Abu Talib; Tienn Kapilasena; Jennifer York; Eren Akgun</td></tr><tr><td>9</td><td>23 Apr 2026</td><td>Group</td><td>Shahryar Barati; Maggie Minton; Andrew Xiong</td></tr><tr><td>10</td><td>6 May 2026</td><td>Group</td><td>Ashwin Lohar; James Hall; James Hughes; Richard Cummins; Simon Tautz; Nicolas Sendagorta</td></tr></tbody></table>
-</section>
-
-<section data-contract-section="key-findings">
-<h2>The Programme Has Scaled Quickly Since March</h2>
-<p><strong>Growth is visible across calls, records, and project flow.</strong> The earliest report on 24 March had 4 group calls, ~22 onboarded scouts, 5 active scouts, and 12 project referrals. By 31 March, the programme had 31 identified scouts and ~23 referred startups. By 7 June, the working view is 65 tracked/prospect records and 40+ named project records.</p>
-<div class="figure"><img src="report-assets/2026-06-07-scouts/programme-growth.png" alt="Line chart showing growth in scout records, project records, and active referrers"><div class="figure-note">Definitions differ slightly by snapshot; counts are treated as operating metrics, not an audit-ready CRM export.</div></div>
-
-<h2>Effectiveness Is Highly Concentrated</h2>
-<p><strong>Mikhail and Ivan are the programme’s current engine.</strong> Mikhail has 14+ project/referrer/partnership signals and Ivan is now at 7 after ADSS. The top five scouts generate roughly three quarters of formal project/proposal signals, which means relationship management with the top tier matters more than broad onboarding volume.</p>
-<div class="figure"><img src="report-assets/2026-06-07-scouts/scout-leaderboard.png" alt="Horizontal bar chart ranking scouts by project proposal signals"><div class="figure-note">Warm leads with no company details are excluded. Mikhail's count is shown as 14+ because the CRM includes a mix of startup, partnership, and referrer introductions.</div></div>
-
-<h2>Project Flow Is Real; Conversion Evidence Is Still Forming</h2>
-<p><strong>The programme is not just creating conversations; it is sourcing plausible cohort and fund-side candidates.</strong> The best current queue includes Praevo, Wizium, ProductMind, Ambic, Miptoxu, and ADSS, with Merble and Egos.ai more likely to sit fund-side or require fit clarification.</p>
-<div class="figure"><img src="report-assets/2026-06-07-scouts/project-quality.png" alt="Horizontal bars showing project records, serious candidates, and accepted outcomes"><div class="figure-note">Accepted outcomes are split because cohort files confirm SWEN, Localie, and Steez; Traxion is CRM-attested and should be checked before external use.</div></div>
-</section>
-
-<section data-contract-section="active-scouts">
-<h2>Who Is Active Now</h2>
-<p><strong>Active now means either a confirmed project/founder signal or a meaningful current scout relationship.</strong> The table separates concrete referral-active scouts from warm-but-not-yet-producing scouts below.</p>
-<table class="compact"><thead><tr><th>Scout / referrer</th><th>Count</th><th>Projects / intros</th><th>Current read</th><th>Latest signal</th></tr></thead><tbody><tr><td>Mikhail Sidakov</td><td>14+</td><td>Landy; Rhycon; Socialode; ex-Amazon/ex-PayPal founder; EdTech; Unicool/Tamara; Dutch TravelTech; Localie; SWEN; Merble; Ambic; ProductMind; plus partnership/referrer leads</td><td>Active power scout</td><td>ProductMind intro 25 May; Ambic next-stage; Baby.vc partnership live</td></tr><tr><td>Ivan Denisov</td><td>7</td><td>Lazy Dynamics; TravelSoul; Fusepay; PowerIn.Space; Miptoxu; Wizium; ADSS</td><td>Active / reactivated</td><td>ADSS proposal 4 Jun; Wizium founder reply 27 May; Miptoxu aligned to next cohort</td></tr><tr><td>Matthew Milner</td><td>5</td><td>Tech Tags; FlowBio; Jules Stories; Volador Energy; Autman Robotics</td><td>Strong but dormant</td><td>Demo Day checked in; no fresh referral email after May check</td></tr><tr><td>Azeem Alam</td><td>4</td><td>Traxion Biotech; SURGALFA; Elvio Robotics; Orthonika</td><td>High-quality specialist</td><td>Orthonika feedback 7-8 May; Traxion accepted in CRM</td></tr><tr><td>Gregory McLoughlin</td><td>4</td><td>Vizmech; Veridue AI; Calibre; Supernomic</td><td>Structured, dormant</td><td>No fresh post-6 May Gmail; approved/no check-in at Demo Day</td></tr><tr><td>Spencer Regan-Smith</td><td>2</td><td>Synaptive; Egos.ai</td><td>Reactivated</td><td>Egos.ai is fundraise-first; accelerator fit uncertain</td></tr><tr><td>Sandro Mothes</td><td>2</td><td>Pixoft; eYou</td><td>Reactivated / screening well</td><td>eYou held because founder not interested in accelerator</td></tr><tr><td>Tienn Kapilasena</td><td>1</td><td>Praevo</td><td>Active Oxford channel</td><td>Founder sent deck 27 May and wants accelerator path</td></tr><tr><td>Deep Sirohi</td><td>1</td><td>Steez</td><td>Low volume / high conversion</td><td>Steez is in cohort founder files</td></tr><tr><td>Samuel Izzard</td><td>1</td><td>FLOWBio</td><td>Warm relationship</td><td>Moved to Republic; asked to catch up</td></tr><tr><td>Arjun Singh Deep</td><td>1</td><td>Autman Robotics</td><td>Reactivation candidate</td><td>Later-stage / investment-side routing</td></tr><tr><td>Bikramaditya Bose</td><td>1</td><td>Temperate</td><td>Dormant / low signal</td><td>Founder declined fit</td></tr><tr><td>Denis Prodan</td><td>1</td><td>Nova</td><td>Dormant / external-ish</td><td>No fresh signal found</td></tr></tbody></table>
-<h3>Warm / engaged but not yet confirmed as referral-active</h3>
-<table class="compact"><thead><tr><th>Person</th><th>Signal</th><th>Project / lead</th><th>Current read</th></tr></thead><tbody><tr><td>James Hughes</td><td>Warm project/person signal</td><td>Francesca Brady / company not specified; female founder pitch day invite</td><td>High-value operator + Proxy VC + US expansion; needs follow-up for company details</td></tr><tr><td>Richard Cummins</td><td>Warm relationship signal</td><td>Unnamed robotics/deep-tech founders from SXSW conversations</td><td>Needs Oliver intro framing; likely strong London scout/angel relationship</td></tr><tr><td>Piero Azzano</td><td>2 warm leads</td><td>MediaMiner; TalentWare</td><td>No full intro yet; mostly Italy/fund-side questions</td></tr><tr><td>Sophie Beaumont</td><td>1 warm lead</td><td>AI/computer-vision farming cultivation tool</td><td>Waiting location / in-person fit</td></tr><tr><td>Pritika Nayak</td><td>2 warm leads</td><td>Dentillegence; Xenadx</td><td>Needs reply / formal onboarding</td></tr><tr><td>Nicolas Sendagorta</td><td>Warm scout no project</td><td>No project yet</td><td>Imperial / First Momentum channel; said he will share ideas</td></tr><tr><td>Ashwin Lohar</td><td>Warm scout no project</td><td>No project yet</td><td>Deep-tech/India/Europe sourcing; signed up for Demo Day but attendance unconfirmed</td></tr><tr><td>Simon Tautz</td><td>Warm scout no project</td><td>No project yet</td><td>Oxford/Munich deep-tech bridge; event email mismatch to reconcile</td></tr><tr><td>Charlie Berners-Price</td><td>Scout prospect</td><td>No project yet</td><td>Demo Day checked in; Strand Ventures scout</td></tr><tr><td>Cristiano</td><td>Inbound prospect</td><td>No project yet</td><td>Scout-role email 1 May; no reply found in checked mailbox</td></tr></tbody></table>
+<table class="compact"><thead><tr><th>#</th><th>Date</th><th>Format</th><th>Scouts attended</th></tr></thead><tbody>
+<tr><td>1</td><td>9 Mar 2026</td><td>Group</td><td>Arjun Singh Deep; Deep Sirohi; Yasmina Banine; Samuel Izzard; Andrea Alivernini; Jan-Philipp Groth; Andre Welponer; Anastasiia Shabalina</td></tr>
+<tr><td>2</td><td>10 Mar 2026</td><td>Group</td><td>Gregory McLoughlin; Tea Vrcic; Azeem Alam; Bikramaditya Bose; Stefano Valle</td></tr>
+<tr><td>3</td><td>12 Mar 2026</td><td>Group</td><td>Rob McKendrick; Riccardo Ongaro; Daniel Hung; Piero Azzano</td></tr>
+<tr><td>4</td><td>17 Mar 2026</td><td>Group</td><td>Ivan Denisov; Sandro Mothes; Sophie Beaumont; Elio Caccuri</td></tr>
+<tr><td>5</td><td>18 Mar 2026</td><td>1:1</td><td>Matthew Milner, with Dmitry and Alex</td></tr>
+<tr><td>6</td><td>27 Mar 2026</td><td>Group</td><td>Brayden Gould; Keshav Todi; Kantesh Sinha; Pulkit Mishra; Samrath Arora; Sarah Luna Mongin; Vanessa</td></tr>
+<tr><td>7</td><td>7 Apr 2026</td><td>Group</td><td>Mikhail Sidakov; Spencer Regan-Smith; Sarfaraz; Jayesh Agarwal; Aidin Kazemizadeh; Bo-Liang Lu; Alexi Chiaramonte; Wanlin Lee</td></tr>
+<tr><td>8</td><td>8 Apr 2026</td><td>Group</td><td>Mikhail Sidakov as co-host; Abrar Akhtar; Ashraf Abu Talib; Tienn Kapilasena; Jennifer York; Eren Akgun</td></tr>
+<tr><td>9</td><td>23 Apr 2026</td><td>Group</td><td>Shahryar Barati; Maggie Minton; Andrew Xiong</td></tr>
+<tr><td>10</td><td>6 May 2026</td><td>Group</td><td>Ashwin Lohar; James Hall; James Hughes; Richard Cummins; Simon Tautz; Nicolas Sendagorta</td></tr>
+</tbody></table>
 </section>
 
 <section data-contract-section="project-ledger">
-<h2>Fresh And High-Value Project Ledger</h2>
-<p><strong>This is the action-oriented subset, not every historical referral.</strong> It focuses on new, high-signal, accepted, or currently decision-relevant projects. This table is the publish-ready action ledger for sharing.</p>
-<table class="compact"><thead><tr><th>Project</th><th>Scout / referrer</th><th>Date range</th><th>What it is</th><th>Current status</th></tr></thead><tbody><tr><td>ADSS</td><td>Ivan Denisov</td><td>4 Jun</td><td>Autonomous vehicle certification / simulation scenarios</td><td>New proposal; Alex has a draft response asking whether Ivan should intro or share round context first</td></tr><tr><td>Wizium</td><td>Ivan Denisov</td><td>25-27 May</td><td>AI decision-making for marketplace sellers</td><td>Full intro made; founder reports $144K ARR in 5 months and $900K committed/soft on pre-seed; wait admission-panel next steps after ~10 Jun</td></tr><tr><td>Miptoxu</td><td>Ivan Denisov</td><td>28 Apr-25 May</td><td>Medical/surgical risk prediction + structured surgical notes</td><td>September timing aligns; admission panels start 8 Jun; needs team follow-up</td></tr><tr><td>Praevo</td><td>Tienn Kapilasena</td><td>25-27 May</td><td>Biomechanics / injury prevention platform with wearable roadmap</td><td>Founder sent deck and explicitly wants accelerator path; needs review / call</td></tr><tr><td>ProductMind</td><td>Mikhail Sidakov</td><td>25-26 May</td><td>Local-first AI copilot for evidence-grounded PRDs</td><td>Full intro made; founder waiting for post-10 Jun next steps</td></tr><tr><td>Ambic</td><td>Mikhail Sidakov</td><td>19-21 May</td><td>Ambic Spatial</td><td>Call happened; good fit / early stage; follow up around 9 Jun</td></tr><tr><td>Merble</td><td>Mikhail Sidakov</td><td>10-20 May</td><td>AI loan officer for lenders</td><td>Strong founder/traction, but likely fund-side due stage/location</td></tr><tr><td>Egos.ai</td><td>Spencer Regan-Smith</td><td>20-26 May</td><td>AI product; pre-revenue, raising $1-2M pre-seed</td><td>Fundraise-first and accelerator uncertain; screened as too early for fund side</td></tr><tr><td>eYou</td><td>Sandro Mothes</td><td>20-26 May</td><td>Social media platform, 50K+ users, seed raise</td><td>Held off because founder not interested in accelerator; likely too early for fund side</td></tr><tr><td>Vectioneer / Motorcortex</td><td>Alexander Skuridin</td><td>8 May-1 Jun</td><td>Robotics / Motorcortex product</td><td>External intro; 28 May call missed; Philippe open to finding another time</td></tr><tr><td>Orthonika</td><td>Azeem Alam</td><td>28 Apr-8 May</td><td>Imperial spinout / medtech</td><td>Feedback sent; possibly later-stage after £5.5M raised; invited to next cohort</td></tr><tr><td>Steez</td><td>Deep Sirohi</td><td>6 Apr+</td><td>Creator/music platform</td><td>Accepted / in cohort founder files</td></tr><tr><td>Localie</td><td>Mikhail Sidakov</td><td>15 Apr+</td><td>Travel/local guides marketplace</td><td>In cohort founder files; attribution to Mikhail should be reconciled for external reporting</td></tr><tr><td>SWEN</td><td>Mikhail Sidakov</td><td>Pre-C3</td><td>Climate / consumer sustainability app</td><td>In cohort founder files; user-confirmed Mikhail referral</td></tr><tr><td>Traxion Biotech</td><td>Azeem Alam</td><td>13 Mar+</td><td>Imperial biotech</td><td>Accepted in Scout CRM; not visible in current founder index, so verify before external claims</td></tr><tr><td>TravelSoul</td><td>Ivan Denisov</td><td>19-27 Mar</td><td>AI travel copilot</td><td>Serious C3 candidate; deck received</td></tr><tr><td>Vizmech</td><td>Gregory McLoughlin</td><td>18 Mar</td><td>AR instruction manuals / automotive</td><td>Good accelerator candidate; needs current status check</td></tr><tr><td>Tech Tags</td><td>Matthew Milner</td><td>24 Mar</td><td>Startup in Matthew batch</td><td>Tatiana requested intro; status needs current check</td></tr><tr><td>BuildBoss</td><td>Karima / Northbright</td><td>20-23 Mar</td><td>Construction / founder Johan Dyer</td><td>External referrer; company appears in cohort founder index</td></tr></tbody></table>
+<h2>Project Ledger</h2>
+<p><strong>This table captures the current and historically important named project records visible in the scout context.</strong> It includes accepted/cohort-linked companies, current admission-panel candidates, fund-side or screened-out referrals, and older projects where the current status is less fresh.</p>
+<table class="compact"><thead><tr><th>Project</th><th>Scout / referrer</th><th>Date range</th><th>What it is</th><th>Current visible status</th></tr></thead><tbody>
+<tr><td>ADSS</td><td>Ivan Denisov</td><td>4 Jun</td><td>Autonomous vehicle certification / simulation scenarios</td><td>New proposal with deck; draft reply asks whether Ivan should intro or share round context first.</td></tr>
+<tr><td>Wizium</td><td>Ivan Denisov</td><td>25-27 May</td><td>AI decision-making for marketplace sellers</td><td>Full intro made; founder shared ARR, committed/soft capital, and offered material for admission panel.</td></tr>
+<tr><td>Miptoxu</td><td>Ivan Denisov</td><td>28 Apr-25 May</td><td>Medical/surgical risk prediction + structured surgical notes</td><td>Founder update received; Alex replied that September timing lines up and panels start 8 June.</td></tr>
+<tr><td>Praevo</td><td>Tienn Kapilasena</td><td>25-27 May</td><td>Biomechanics / injury-prevention platform with wearable roadmap</td><td>Founder sent deck and explicitly confirmed accelerator interest.</td></tr>
+<tr><td>ProductMind</td><td>Mikhail Sidakov</td><td>25-26 May</td><td>Local-first AI copilot for evidence-grounded PRDs</td><td>Full intro made; founder waiting for post-10 June next steps.</td></tr>
+<tr><td>Ambic</td><td>Mikhail Sidakov</td><td>19-21 May</td><td>Ambic Spatial</td><td>Tatiana call happened; thread says good fit / early stage; founder interested in GRx community and accelerator.</td></tr>
+<tr><td>Merble</td><td>Mikhail Sidakov</td><td>10-20 May</td><td>AI loan officer for lenders</td><td>Tatiana call happened; thread says great founder/traction but more fund-side than accelerator due stage/location.</td></tr>
+<tr><td>Egos.ai</td><td>Spencer Regan-Smith</td><td>20-26 May</td><td>AI product; pre-revenue, raising $1-2M pre-seed</td><td>Fundraise-first; accelerator interest uncertain.</td></tr>
+<tr><td>eYou</td><td>Sandro Mothes</td><td>20-26 May</td><td>Social media platform, 50K+ users, seed raise</td><td>Founder not currently interested in accelerator; intro held off.</td></tr>
+<tr><td>Vectioneer / Motorcortex</td><td>Alexander Skuridin</td><td>8 May-1 Jun</td><td>Robotics / Motorcortex product</td><td>External intro; 28 May call missed; Philippe open to rescheduling with Tatiana.</td></tr>
+<tr><td>Orthonika</td><td>Azeem Alam</td><td>28 Apr-8 May</td><td>Imperial spinout / medtech</td><td>Feedback sent; invited to next cohort; possible later-stage fit due £5.5M raised.</td></tr>
+<tr><td>Steez</td><td>Deep Sirohi</td><td>6 Apr+</td><td>Creator/music platform</td><td>Accepted / visible in cohort founder files.</td></tr>
+<tr><td>Localie</td><td>Mikhail Sidakov</td><td>15 Apr+</td><td>Travel/local guides marketplace</td><td>Visible in cohort founder files; attribution to Mikhail should be reconciled before external conversion claims.</td></tr>
+<tr><td>SWEN</td><td>Mikhail Sidakov</td><td>Pre-C3</td><td>Climate / consumer sustainability app</td><td>Visible in cohort founder files; tied to Mikhail in local/user-confirmed context.</td></tr>
+<tr><td>Traxion Biotech</td><td>Azeem Alam</td><td>13 Mar+</td><td>Imperial biotech</td><td>Accepted in Scout CRM; not visible in current founder index during earlier check.</td></tr>
+<tr><td>TravelSoul</td><td>Ivan Denisov</td><td>19-27 Mar</td><td>AI travel copilot</td><td>Serious Cohort 3 candidate in March; deck received.</td></tr>
+<tr><td>Vizmech</td><td>Gregory McLoughlin</td><td>18 Mar</td><td>AR instruction manuals / automotive</td><td>Good accelerator candidate in March notes; current status not refreshed in latest Gmail check.</td></tr>
+<tr><td>Tech Tags</td><td>Matthew Milner</td><td>24 Mar</td><td>Startup in Matthew batch</td><td>Tatiana requested intro in March context; current status not refreshed.</td></tr>
+<tr><td>BuildBoss</td><td>Karima / Northbright</td><td>20-23 Mar</td><td>Construction / founder Johan Dyer</td><td>External referrer; company appears in cohort founder index.</td></tr>
+</tbody></table>
 </section>
 
-<section data-contract-section="recommendations">
-<h2>Recommended Next Steps</h2>
-<ol>
-<li><strong>Run a top-scout cadence immediately.</strong> Keep Mikhail, Ivan, Azeem, Tienn, Spencer, Sandro, James Hughes, and Richard Cummins in a weekly/fortnightly loop with fast feedback and a clear “what we want now” brief.</li>
-<li><strong>Move the live candidates into admissions/fund routing.</strong> Praevo, Wizium, ProductMind, Miptoxu, Ambic, ADSS, Egos.ai, and Vectioneer each need an owner and next step; eYou should stay logged as screened out unless the founder becomes accelerator-curious.</li>
-<li><strong>Reactivate the good but quiet referrers.</strong> Gregory, Matthew, Samuel, Deep, Arjun, and Azeem should get a precise post-Demo-Day ask, not a generic catch-up.</li>
-<li><strong>Clean up attribution before using conversion stats externally.</strong> Dedupe Autman/FLOWBio, confirm Localie/SWEN attribution, and verify Traxion’s accepted status against the founder/admissions source of truth.</li>
-<li><strong>Measure dynamics, not only all-time counts.</strong> Track weekly project signals, first referral latency after onboarding, response time to scouts, and candidate outcome by scout.</li>
-</ol>
-</section>
-
-<section data-contract-section="further-questions">
-<h2>Further Questions</h2>
+<section data-contract-section="reconciliation">
+<h2>Known Reconciliation Items</h2>
+<div class="callout"><p><strong>This section lists factual mismatches or incomplete records.</strong></p></div>
 <ul>
-<li>Which source should control cohort acceptance status: Founder profiles, admissions sheet, or Scout CRM?</li>
-<li>Should fund-side referrals count toward scout effectiveness, or should they be tracked as a separate benefit stream?</li>
-<li>Do we want a formal “priority scout” tier with structured benefits such as Demo Day access, founder feedback, and cohort deal-flow sharing?</li>
-<li>What is the intended next cohort date in external messaging: mid-August start, September fundraising timing, or both?</li>
-</ul>
-</section>
-
-<section data-contract-section="caveats-assumptions">
-<h2>Caveats And Assumptions</h2>
-<div class="callout"><p><strong>These numbers are operating-grade, not audit-grade.</strong> Local files already flag dedupe and attribution gaps. I treated Gmail as the freshest status layer and Scout CRM as the controlling roster layer, then separated concrete intros from warm leads where the evidence was incomplete.</p></div>
-<ul>
+<li>Localie appears in cohort founder files and is tied to Mikhail in activity notes, but CRM stats did not consistently list it under accepted-from-scouts.</li>
+<li>Traxion Biotech is accepted in Scout CRM but was not visible in the current founder index during the earlier check.</li>
+<li>Mikhail's Demo Day C1 attendance is CRM-attested; event CSV showed approved/no check-in. Do not count it as CSV-confirmed attendance.</li>
+<li>Bikramaditya Bose has CRM context saying he attended the 24 Mar event in person, but the event CSV shows approved/no check-in under an alternate email.</li>
+<li>Simon Tautz has a Demo Day C3 approved/no-check-in row under a different email from the CRM record.</li>
+<li>Cohort timing appears in messages as both mid-August cohort start and September fundraising/admissions timing, depending on the thread.</li>
 <li>Project counts include proposals and founder intros; not every project became an admissions candidate.</li>
-<li>Mikhail's 14+ count includes startup, partnership, and referrer signals; it should be normalized before investor-facing reporting.</li>
-<li>Autman Robotics and FLOWBio appear from more than one scout/referrer path; deduping reduces unique project totals.</li>
-<li>Event attendance is useful for activation, but absence of check-in is not proof of non-attendance.</li>
-<li>Gmail searches were targeted around scout/referral/project terms and priority names after 25 May, plus full-thread reads for the main fresh deltas.</li>
 </ul>
-<h3>Reviewed source types</h3>
-<ul class="source-list"><li>Local Scout CRM and scout reports</li><li>Gmail threads checked through 7 June 2026</li><li>Event attendance exports</li><li>Cohort founder profile files</li></ul>
 </section>
 
 </main>
